@@ -1,0 +1,8 @@
+---
+branches:
+  only:
+    - master
+
+cache: true
+
+script: make test
