@@ -1,7 +1,5 @@
 # docker-pentaho-di
 
-[![Build Status](https://api.shippable.com/projects/556c935aedd7f2c052035879/badge?branchName=master)](https://app.shippable.com/projects/556c935aedd7f2c052035879/builds/latest)
-
 Docker image for Pentaho Data Integration (PDI), also known as Kettle, Community Edition. It supports running Carte as a service, or Pan or Kitchen as batch jobs. It also supports the running of custom scripts to fully customise derived Docker images.
 
 By default, running a container from this image runs `carte.sh` with the configuration file `/pentaho-di/carte_config.xml` that sets up the container as a Carte master node listening on port 8080. The default settings can be changed using environment variables or by supplying a custom configuration file (see *Running Carte* below).

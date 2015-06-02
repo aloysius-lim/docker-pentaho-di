@@ -8,10 +8,10 @@ base_image: shippableimages/ubuntu1404_base
 cache: true
 
 before_install:
-  - curl -sSL https://get.docker.com/ | sudo sh
+  - curl -sSL https://get.docker.com/ | sh
+  - env | grep DOCKER
 
 install: true
 
 script:
-  - env | grep DOCKER
-  - sudo make test
+  - make test
