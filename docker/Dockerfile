@@ -2,8 +2,8 @@ FROM java:jre
 
 MAINTAINER Aloysius Lim
 
-ENV PDI_RELEASE=5.2 \
-    PDI_VERSION=5.2.0.0-209 \
+ENV PDI_RELEASE=5.3 \
+    PDI_VERSION=5.3.0.0-213 \
     PDI_HOME=/opt/pentaho-di \
     KETTLE_HOME=/pentaho-di
 
