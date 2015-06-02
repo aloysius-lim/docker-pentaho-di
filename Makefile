@@ -1,4 +1,4 @@
-tag = 5.3
+tag = 5.2
 
 build_dir = build
 VPATH = docker:$(build_dir)

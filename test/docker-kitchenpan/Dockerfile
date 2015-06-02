@@ -1,4 +1,4 @@
-FROM abtpeople/pentaho-di:5.3
+FROM abtpeople/pentaho-di:5.2
 
 MAINTAINER Aloysius Lim
 
