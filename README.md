@@ -6,10 +6,10 @@ By default, running a container from this image runs `carte.sh` with the configu
 
 Alternatively, this image can be used as a base image to run specific PDI jobs or transformations. The examples below illustrate how this can be done.
 
-## Supported tags
+## Supported Tags and Links to Dockerfiles
 
-* `5.2`
-* `5.3`, `latest`
+* [`5.2`](https://github.com/abtpeople/docker-pentaho-di/blob/5.2/docker/Dockerfile)
+* [`5.3`](https://github.com/abtpeople/docker-pentaho-di/blob/5.3/docker/Dockerfile), [`latest`](https://github.com/abtpeople/docker-pentaho-di/blob/master/docker/Dockerfile)
 
 ## Environment Variables
 
