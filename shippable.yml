@@ -1,6 +1,8 @@
 ---
 branches:
   only:
+    - "5.2"
+    - "5.3"
     - master
 
 base_image: shippableimages/ubuntu1404_base
