@@ -12,4 +12,4 @@ before_install:
 
 install: true
 
-script: make test
+script: sudo make test
