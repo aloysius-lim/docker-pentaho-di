@@ -8,8 +8,8 @@ Alternatively, this image can be used as a base image to run specific PDI jobs o
 
 ## Supported Tags and Links to Dockerfiles
 
-* [`5.2`](https://github.com/abtpeople/docker-pentaho-di/blob/5.2/docker/Dockerfile)
-* [`5.3`](https://github.com/abtpeople/docker-pentaho-di/blob/5.3/docker/Dockerfile), [`latest`](https://github.com/abtpeople/docker-pentaho-di/blob/master/docker/Dockerfile)
+* [`5.2.0.0-209`](https://github.com/abtpeople/docker-pentaho-di/blob/5.2.0.0-209/docker/Dockerfile), [`5.2`](https://github.com/abtpeople/docker-pentaho-di/blob/5.2/docker/Dockerfile)
+* [`5.3.0.0-213`](https://github.com/abtpeople/docker-pentaho-di/blob/5.3.0.0-213/docker/Dockerfile), [`5.3`](https://github.com/abtpeople/docker-pentaho-di/blob/5.3/docker/Dockerfile), [`latest`](https://github.com/abtpeople/docker-pentaho-di/blob/master/docker/Dockerfile)
 
 ## Environment Variables
 
