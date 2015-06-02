@@ -1,6 +1,6 @@
 #!/bin/bash
 # Image to test
-: ${IMAGE:=abtpeople/pentaho-di:test}
+: ${TAG:=latest}
 
 # Hostname to test connections
 CONTAINER_HOST=localhost

@@ -2,6 +2,8 @@
 
 setup() {
   load test_env
+  : ${IMAGE:=abtpeople/pentaho-di:$TAG}
+
   CONTAINER=$( docker run -d -p=8080:8080 --name=pdi_test_$BATS_TEST_NUMBER $IMAGE )
   TIMEOUT=60
   until [ "$TIMEOUT" -eq 0 ] || [ $( docker inspect -f {{.State.Running}} $CONTAINER ) = "true" ]; do

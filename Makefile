@@ -21,19 +21,8 @@ image-test-kitchenpan: test/docker-kitchenpan/Dockerfile test/docker-kitchenpan/
 	docker build -t abtpeople/pentaho-di:$(tag)-test-kitchenpan test/docker-kitchenpan
 	touch $(build_dir)/$@
 
-test: test-carte_default test-carte_custom test-pan test-kitchen
-
-test-carte_default: image
-	IMAGE=abtpeople/pentaho-di:$(tag) bats test/carte_default.bats
-
-test-carte_custom: image
-	IMAGE=abtpeople/pentaho-di:$(tag) bats test/carte_custom.bats
-
-test-pan: image-test-kitchenpan
-	IMAGE=abtpeople/pentaho-di:$(tag)-test-kitchenpan bats test/pan.bats
-
-test-kitchen: image-test-kitchenpan
-	IMAGE=abtpeople/pentaho-di:$(tag)-test-kitchenpan bats test/kitchen.bats
+test: image image-test-kitchenpan
+	TAG=$(tag) bats test
 
 clean: clean-image clean-images-test
 	-rmdir $(build_dir)

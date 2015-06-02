@@ -2,6 +2,8 @@
 
 setup() {
   load test_env
+  : ${IMAGE:=abtpeople/pentaho-di:$TAG}
+
   DOCKER_ENV=""
   DOCKER_ENV="$DOCKER_ENV -e CARTE_NAME=mycarte"
   DOCKER_ENV="$DOCKER_ENV -e CARTE_NETWORK_INTERFACE=eth0"
