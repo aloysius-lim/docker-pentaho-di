@@ -5,6 +5,6 @@ branches:
 
 cache: true
 
-install:
+install: docker --version
 
 script: make test
