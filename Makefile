@@ -13,8 +13,8 @@ $(build_dir):
 
 images: $(tags:%=image-%)
 
-image-%: %.Dockerfile docker-entrypoint.sh carte_config_master.xml carte_config_slave.xml $(build_dir)
-	docker build -t abtpeople/pentaho-di:$* -f docker/$*.Dockerfile docker
+image-%: %/Dockerfile %/docker-entrypoint.sh %/carte_config_master.xml %/carte_config_slave.xml $(build_dir)
+	docker build -t abtpeople/pentaho-di:$* $*
 	touch $(build_dir)/$@
 
 images-test: $(tags:%=image-test-kitchenpan-%)
